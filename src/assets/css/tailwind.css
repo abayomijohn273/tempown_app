@@ -1,0 +1,23 @@
+/* TempOwn Default Settings */
+:root {
+    /*Default  Color */
+    --color-primary: #012b41;
+
+    --color-secondary: #10618b;
+
+    --color-green-default: #007660;
+
+    --color-light-green: #89d8c9;
+
+    --color-light-green-100: #effbf9;
+
+    --color-light-green-200: #f0fff4;
+
+    --color-info: #00b59c;
+
+    --color-white: #ffffff;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
