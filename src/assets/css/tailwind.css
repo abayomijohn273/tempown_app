@@ -1,23 +1,67 @@
 /* TempOwn Default Settings */
 :root {
-    /*Default  Color */
-    --color-primary: #012b41;
+  /*Default  Color */
+  --color-primary: #012b41;
 
-    --color-secondary: #10618b;
+  --color-secondary: #10618b;
 
-    --color-green-default: #007660;
+  --color-green-default: #007660;
 
-    --color-light-green: #89d8c9;
+  --color-light-green: #89d8c9;
 
-    --color-light-green-100: #effbf9;
+  --color-light-green-100: #effbf9;
 
-    --color-light-green-200: #f0fff4;
+  --color-light-green-200: #f0fff4;
 
-    --color-info: #00b59c;
+  --color-info: #00b59c;
 
-    --color-white: #ffffff;
+  --color-gray: #616564;
+
+  --color-white: #ffffff;
+
+  --color-orange: #fc9c0c;
 }
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: dm-serif;
+    font-weight: 400;
+    src: url(../fonts/dm-serif-display/DMSerifDisplay-Regular.woff)
+      format("woff");
+  }
+  @font-face {
+    font-family: dm-serif;
+    font-style: italic;
+    src: url(../fonts/dm-serif-display/DMSerifDisplay-Italic.woff)
+      format("woff");
+  }
+
+  @font-face {
+    font-family: Campton;
+    font-weight: 200;
+    src: url(../fonts/campton/CamptonExtraLight.woff) format("woff");
+  }
+
+  @font-face {
+    font-family: Campton;
+    font-weight: 300;
+    src: url(../fonts/campton/CamptonLight.woff) format("woff");
+  }
+
+  @font-face {
+    font-family: Campton;
+    font-weight: 400;
+    src: url(../fonts/campton/CamptonBook.woff) format("woff");
+  }
+  @font-face {
+    font-family: Campton;
+    font-weight: 600;
+    src: url(../fonts/campton/CamptonSemiBold.woff) format("woff");
+  }
+}
+
+@import "./main.css";

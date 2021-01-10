@@ -1,81 +1,78 @@
 {
-    "name": "tempown",
-    "version": "0.1.0",
-    "private": true,
-    "dependencies": {
-        "@craco/craco": "^6.0.0",
-        "@tailwindcss/postcss7-compat": "^2.0.2",
-        "@testing-library/jest-dom": "^5.11.4",
-        "@testing-library/react": "^11.1.0",
-        "@testing-library/user-event": "^12.1.10",
-        "autoprefixer": "^9.8.6",
-        "axios": "^0.21.1",
-        "postcss": "^7.0.35",
-        "react": "^17.0.1",
-        "react-dom": "^17.0.1",
-        "react-helmet": "^6.1.0",
-        "react-redux": "^7.2.2",
-        "react-router-dom": "^5.2.0",
-        "react-scripts": "4.0.1",
-        "redux": "^4.0.5",
-        "redux-thunk": "^2.3.0",
-        "store": "^2.0.12",
-        "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
-        "web-vitals": "^0.2.4"
-    },
-    "scripts": {
-        "start": "craco start",
-        "build": "craco build",
-        "test": "craco test",
-        "eject": "react-scripts eject"
-    },
-    "browserslist": {
-        "production": [
-            ">0.2%",
-            "not dead",
-            "not op_mini all"
-        ],
-        "development": [
-            "last 1 chrome version",
-            "last 1 firefox version",
-            "last 1 safari version"
-        ]
-    },
-    "devDependencies": {
-        "eslint-config-prettier": "^7.1.0",
-        "eslint-plugin-prettier": "^3.3.1",
-        "husky": "^4.3.6",
-        "lint-staged": "^10.5.3",
-        "prettier": "^2.2.1"
-    },
-    "eslintConfig": {
-        "extends": [
-            "react-app",
-            "react-app/jest",
-            "plugin:prettier/recommended"
-        ]
-    },
-    "prettier": {
-        "printWidth": 90,
-        "bracketSpacing": false,
-        "semi": true,
-        "singleQuote": true,
-        "tabWidth": 4,
-        "useTabs": false
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "lint-staged"
-        }
-    },
-    "lint-staged": {
-        "*.+(js|jsx)": [
-            "eslint --fix",
-            "git add"
-        ],
-        "*.+(json|css|md)": [
-            "prettier --write",
-            "git add"
-        ]
+  "name": "tempown",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@craco/craco": "^6.0.0",
+    "@headlessui/react": "^0.2.0",
+    "@tailwindcss/postcss7-compat": "^2.0.2",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "autoprefixer": "^9.8.6",
+    "axios": "^0.21.1",
+    "indicative": "^7.4.4",
+    "jquery": "^3.5.1",
+    "postcss": "^7.0.35",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0",
+    "react-owl-carousel": "^2.3.1",
+    "react-redux": "^7.2.2",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.1",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0",
+    "store": "^2.0.12",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
+    "web-vitals": "^0.2.4"
+  },
+  "scripts": {
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "husky": "^4.3.6",
+    "lint-staged": "^10.5.3",
+    "prettier": "^2.2.1"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest",
+      "plugin:prettier/recommended"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
     }
+  },
+  "lint-staged": {
+    "*.+(js|jsx)": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.+(json|css|md)": [
+      "prettier --write",
+      "git add"
+    ]
+  }
 }
